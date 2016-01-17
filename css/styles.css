@@ -1,0 +1,1093 @@
+.body-v2 input, .body-v2 label, .body-v2 select, .body-v2 button, .body-v2 textarea {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    -webkit-appearance: none;
+    font-size: 13px;
+    font-family: Arial
+}
+.body-v2 input:focus {
+    outline: 0
+}
+.body-v2 input, .body-v2 textarea {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+.body-v2 button, .body-v2 input[type=reset], .body-v2 input[type=button], .body-v2 input[type=submit], .body-v2 input[type=checkbox], .body-v2 input[type=radio], .body-v2 select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.body-v2 input[type=checkbox], .body-v2 input[type=radio] {
+    width: 13px;
+    height: 13px
+}
+.body-v2 input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box
+}
+.body-v2::-webkit-search-decoration {
+    display: none
+}
+.body-v2 button, .body-v2 input[type="reset"], .body-v2 input[type="button"], .body-v2 input[type="submit"] {
+    overflow: visible;
+    width: auto
+}
+.body-v2::-webkit-file-upload-button {
+    padding: 0;
+    border: 0;
+    background: none
+}
+.body-v2 textarea {
+    vertical-align: top;
+    overflow: auto
+}
+.body-v2 select[multiple] {
+    vertical-align: top
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: lighter;
+    src: local("AvenirNext LT Pro Light"), local("AvenirNext-Light"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_light.eot?#iefix);
+    src: local("AvenirNext LT Pro Light"), local("AvenirNext-Light"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_light.eot?#iefix) format("eot"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_light-baabe0e11d9898c0c2c45b1a271ffe7e.woff) format("woff"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_light-545c405822550b48d8c4667536724229.ttf) format("truetype"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_light.svg#avenir_light) format("svg")
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: normal;
+    src: local("AvenirNext LT Pro Regular"), local("AvenirNext-Regular"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_regular.eot?#iefix);
+    src: local("AvenirNext LT Pro Regular"), local("AvenirNext-Regular"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_regular.eot?#iefix) format("eot"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_regular-ad80038b69e1a34ab230a7c610adf218.woff) format("woff"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_regular-6cdc5a3a2e2b4263d244e47275f68dd3.ttf) format("truetype"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_regular.svg#avenir_regular) format("svg")
+}
+@font-face {
+    font-family: "Avenir Demi";
+    src: local("AvenirNext LT Pro Medium Regular"), local("AvenirNext-DemiBold"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_demi.eot?#iefix);
+    src: local("AvenirNext LT Pro Medium Regular"), local("AvenirNext-DemiBold"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_demi.eot?#iefix) format("eot"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_demi-f478896268f5ea0fdbc8f7fe8c17dcf4.woff) format("woff"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_demi-dd7faea5506b84bde32cdabd0dd1c16e.ttf) format("truetype"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_demi.svg#avenir_demi) format("svg")
+}
+@font-face {
+    font-family: "Avenir";
+    font-weight: bold;
+    src: local("AvenirNext LT Pro Bold"), local("AvenirNext-Bold"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_bold.eot?#iefix);
+    src: local("AvenirNext LT Pro Bold"), local("AvenirNext-Bold"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_bold.eot?#iefix) format("eot"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_bold-978db58489f02542d6d21427161064d0.woff) format("woff"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_bold-f5554b815a7cd0a420d28a1a7fd361dc.ttf) format("truetype"), url(//d3rnbxvnd0hlox.cloudfront.net/assets/avenir_bold.svg#avenir_bold) format("svg")
+}
+@media (max-width: 767px) {
+    .hide-on-xs {
+        display: none !important
+    }
+}
+@media (max-width: 991px) {
+    .hide-on-sm {
+        display: none !important
+    }
+}
+@media (max-width: 1199px) {
+    .hide-on-md {
+        display: none !important
+    }
+}
+@media (min-width: 1200px) {
+    .hide-on-lg {
+        display: none !important
+    }
+}
+@media (max-width: 767px) {
+    .show-on-xs {
+        display: inline-block
+    }
+}
+@media (max-width: 991px) {
+    .show-on-sm {
+        display: inline-block
+    }
+}
+@media (max-width: 1199px) {
+    .show-on-md {
+        display: inline-block
+    }
+}
+@media (min-width: 1200px) {
+    .show-on-lg {
+        display: inline-block
+    }
+}
+.body-v2 {
+    font-family: "Avenir", helvetica, arial, sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex-flow: column;
+    display: -webkit-flex;
+    min-height: 100vh;
+    flex-direction: column
+}
+.body-v2 *, .body-v2 *:before, .body-v2 *:after {
+    box-sizing: inherit;
+    outline: 0
+}
+.body-v2 h1 {
+    font-size: 80px;
+    margin: 10px 0
+}
+.body-v2 h1, .body-v2 h2 {
+    color: #4e3e41
+}
+.body-v2 h3, .body-v2 h4, .body-v2 h5, .body-v2 h6 {
+    color: #333
+}
+.body-v2 h3 {
+    font-size: 24px
+}
+.body-v2 a {
+    color: #00adff;
+    text-decoration: none
+}
+.body-v2 hr {
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    margin: 5px 0
+}
+.body-v2 .hide {
+    display: none
+}
+.body-v2 .nowrap {
+    white-space: nowrap
+}
+.body-v2 .txt-centered {
+    text-align: center
+}
+.body-v2 .main-footer {
+    align-self: flex-end;
+    margin-top: 30px
+}
+.body-v2 .main-wrapper {
+    flex: 1
+}
+.body-v2 .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (max-width: 1199px) {
+    .body-v2 .container {
+        width: 100% !important
+    }
+}
+.body-v2 .header-content {
+    padding: 15px 10px
+}
+.body-v2 .header-content .logo {
+    width: 90px
+}
+.body-v2 .header-content nav ul.header-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 31px;
+    display: inline-block
+}
+.body-v2 .header-content nav ul.header-menu>li {
+    display: inline-block;
+    line-height: 31px;
+    height: 31px;
+    vertical-align: top
+}
+.body-v2 .header-content nav ul.header-menu>li img {
+    vertical-align: middle
+}
+.body-v2 .header-content nav a, .body-v2 .header-content nav button {
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #4e3e41;
+    padding: 1px 10px;
+    height: 31px;
+    transition: all .1s ease-in-out;
+    margin: 0 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block
+}
+.body-v2 .header-content nav .quick-search {
+    margin: 0 15px 0 0;
+    padding: 0
+}
+.body-v2 .header-content nav .quick-search .quick-search-container {
+    display: inline-block;
+    width: 100%
+}
+.body-v2 .header-content nav .quick-search .quick-search-container form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0
+}
+.body-v2 .header-content nav .quick-search .quick-search-container input[type="submit"] {
+    border: none;
+    background: #edebec;
+    width: 44px;
+    text-align: center;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    height: 32px;
+    line-height: 32px;
+    background-image: url(//d3rnbxvnd0hlox.cloudfront.net/assets/v2/search-ebd6b78753b274eca992860c878eb7da.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 14px 14px;
+    cursor: pointer;
+    padding: 0 4px;
+    margin: 0
+}
+.body-v2 .header-content nav .quick-search .quick-search-container input[type="text"] {
+    font-family: "Avenir", Helvetica, Arial;
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    padding: 1px 10px 0 10px;
+    background: #edebec;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    font-size: 14px
+}
+.body-v2 .header-content nav .dropdown-menu {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.1)
+}
+.body-v2 .header-content nav .dropdown-menu .caret-down {
+    opacity: 0.8
+}
+.body-v2 .header-content nav .dropdown-menu li {
+    line-height: normal
+}
+.body-v2 .header-content nav .dropdown-menu li:hover {
+    background-color: #00adff
+}
+.body-v2 .header-content nav .dropdown-menu li:hover a, .body-v2 .header-content nav .dropdown-menu li:hover a:hover {
+    color: white
+}
+.body-v2 .header-content nav .dropdown-menu li a {
+    transition: none;
+    display: block;
+    margin: 0;
+    padding: 4px 12px;
+    box-sizing: content-box;
+    line-height: 32px
+}
+.body-v2 .header-content nav .dropdown-menu li a:hover {
+    text-decoration: none
+}
+.body-v2 .header-content nav .dropdown-menu li span.user-name {
+    max-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+@media (min-width: 768px) {
+    .body-v2 .header-content nav .dropdown-menu li.xs-only {
+        display: none !important
+    }
+}
+.body-v2 .header-content nav .btn-primary {
+    border-radius: 6px
+}
+.body-v2 .header-content, .body-v2 footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+.body-v2 footer {
+    height: 60px;
+    padding: 10px;
+    color: #bfbfbf;
+    font-size: 11px;
+    -webkit-align-items: center;
+    align-items: center
+}
+@media (min-width: 480px) {
+    .body-v2 footer {
+        font-size: 16px;
+        padding: 10px
+    }
+}
+.body-v2 footer nav a, .body-v2 footer nav a:hover {
+    font-family: "Avenir Demi";
+    color: #bfbfbf;
+    padding: 5px 10px
+}
+.body-v2 footer .made-in {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: 10px
+}
+.body-v2 footer .made-in img {
+    height: 20px;
+    max-width: 30px;
+    margin-right: 5px
+}
+.body-v2 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.header {
+    text-align: center;
+    padding: 10px 40px 40px 40px
+}
+.header h1 {
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: -2px;
+    color: #4e3e41
+}
+@media (min-width: 1199px) {
+    .header h1 {
+        font-size: 64px;
+        line-height: 75px
+    }
+}
+.header h2 {
+    font-weight: normal;
+    margin: 0 auto;
+    color: #4e3e41
+}
+@media (min-width: 1199px) {
+    .header h2 {
+        font-size: 28px;
+        line-height: 34px
+    }
+}
+.header h3 {
+    font-weight: 100;
+    font-size: 24px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    color: #4e3e41
+}
+.page-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fafafa
+}
+.page-header .page-title {
+    font-weight: normal;
+    font-size: 36px
+}
+.dropdown .dropdown-container {
+    display: inline-block;
+    position: relative;
+    text-align: center
+}
+.dropdown .dropdown-button {
+    cursor: pointer;
+    position: relative
+}
+.dropdown .dropdown-button:after {
+    display: block;
+    position: absolute
+}
+.dropdown .dropdown-menu {
+    cursor: pointer;
+    display: none;
+    overflow: show;
+    position: absolute;
+    text-align: left;
+    z-index: 99999;
+    background: #FFF;
+    min-width: 200px;
+    right: 0
+}
+.dropdown .show-menu {
+    display: block
+}
+.caret-up, .caret-down, .caret-left, .caret-right {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    padding-top: 2px
+}
+.caret-up {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black
+}
+.caret-down {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black
+}
+.caret-right {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid black
+}
+.caret-left {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid black
+}
+.body-v2 .btn-primary, .body-v2 a.btn-primary {
+    padding: 10px 24px;
+    color: white;
+    background: #00adff;
+    border-radius: 40px;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    margin: 5px;
+    padding: 20px 40px 20px 40px;
+    font-size: 36px;
+    cursor: pointer
+}
+.body-v2 .btn-primary:hover, .body-v2 a.btn-primary:hover {
+    text-decoration: none;
+    background: #00adff;
+    color: #FFF
+}
+.body-v2 .btn-secondary, .body-v2 a.btn-secondary, .body-v2 input[type="submit"] {
+    color: white !important;
+    background: #00adff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer
+}
+.bottom-categories {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 40px
+}
+.bottom-categories h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Avenir"
+}
+.bottom-categories li {
+    margin: 8px auto;
+    display: table-row;
+    font-family: "Avenir Demi";
+    display: block;
+    padding: 10px 14px 10px 14px;
+    text-align: left;
+    background: #FFF;
+    border-radius: 10px
+}
+.bottom-categories li img {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px
+}
+@media (min-width: 992px) {
+    .bottom-categories li img {
+        margin-right: 20px
+    }
+}
+@media (min-width: 992px) {
+    .bottom-categories {
+        padding: 80px 0
+    }
+    .bottom-categories h2 {
+        font-family: Avenir;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px
+    }
+    .bottom-categories li {
+        border: none;
+        width: auto;
+        background: transparent;
+        display: inline-block;
+        margin: 5px
+    }
+    .bottom-categories li:hover span {
+        color: #00adff
+    }
+    .bottom-categories li img {
+        display: block;
+        max-height: 50px;
+        margin: 0 auto;
+        margin-bottom: 12px
+    }
+    .bottom-categories li span {
+        transition: all .4s ease-in-out;
+        font-family: "Avenir Demi";
+        display: block;
+        background: white;
+        border-radius: 24px;
+        padding: 4px 14px
+    }
+    .bottom-categories #other-categories-item-fitness img {
+        width: 80px
+    }
+}
+.body-v2 .showcase {
+    text-align: center
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .header {
+        padding: 60px 40px 40px 40px
+    }
+    .body-v2 .showcase .header h1 {
+        font-size: 80px;
+        line-height: 90px
+    }
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .categories {
+        margin: 10px auto 120px
+    }
+}
+.body-v2 .showcase .categories ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 30px
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .categories ul {
+        margin-bottom: 0
+    }
+}
+.body-v2 .showcase .categories ul li {
+    margin: 30px;
+    width: 290px
+}
+.body-v2 .showcase .categories ul li a {
+    color: #333
+}
+.body-v2 .showcase .categories ul li a * {
+    transition: all .4s ease-in-out
+}
+.body-v2 .showcase .categories ul li a:hover h3 {
+    color: #00adff
+}
+.body-v2 .showcase .categories ul li a:hover .thumbnail {
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%)
+}
+.body-v2 .showcase .categories ul li a .thumbnail {
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+.body-v2 .showcase .categories ul li span {
+    display: inline-block
+}
+.body-v2 .showcase .categories ul li h3 {
+    margin: 10px 0;
+    color: #00adff
+}
+.body-v2 .showcase .integrations {
+    background-color: #fafafa;
+    padding: 80px 0
+}
+.body-v2 .showcase .integrations h3 {
+    margin: 0
+}
+.body-v2 .showcase .integrations ul li {
+    display: inline-block;
+    margin: 20px 0;
+    width: 140px
+}
+@media (max-width: 992px) {
+    .body-v2 .showcase .integrations ul li {
+        width: 100px
+    }
+}
+@media (max-width: 768px) {
+    .body-v2 .showcase .integrations ul li {
+        width: auto
+    }
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .integrations ul li {
+        margin: 40px 0
+    }
+}
+.body-v2 .showcase .integrations ul li a {
+    font-family: "Avenir Demi"
+}
+.body-v2 .showcase .integrations ul li img {
+    width: 35px;
+    display: block;
+    margin: 0 auto
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .integrations ul li img {
+        width: 60px
+    }
+}
+@media (min-width: 992px) {
+    .body-v2 .showcase .integrations ul li span {
+        margin-top: 10px;
+        display: inline-block
+    }
+}
+#v2-categories-body header {
+    background-color: #f8f8f8
+}
+#v2-categories-body header .quick-search .quick-search-container input[type="submit"] {
+    background-color: #FFF
+}
+#v2-categories-body header .quick-search .quick-search-container input[type="text"] {
+    background: #FFF
+}
+.body-v2 .category .header {
+    background-color: #f8f8f8
+}
+@media (min-width: 992px) {
+    .body-v2 .category .header {
+        padding: 40px 40px 60px 40px
+    }
+}
+.body-v2 .category .header .category-logo .logo {
+    margin-bottom: 10px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%
+}
+@media (min-width: 992px) {
+    .body-v2 .category .header .category-logo .logo {
+        margin-bottom: 10px
+    }
+}
+.body-v2 .category .recipes {
+    margin: 0 auto
+}
+.body-v2 .category .recipes ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+.body-v2 .category .recipes ul li {
+    padding: 0 80px;
+    border: 1px solid #DEDEDE;
+    border-top: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center
+}
+@media (min-width: 992px) {
+    .body-v2 .category .recipes ul li {
+        width: 50%
+    }
+}
+.body-v2 .category .recipes ul li:nth-of-type(2n+1) {
+    border-left: none
+}
+.body-v2 .category .recipes ul li:nth-of-type(2n+1) .item-content {
+    float: right
+}
+.body-v2 .category .recipes ul li:nth-of-type(2n) {
+    border-left: none;
+    border-right: none
+}
+.body-v2 .category .recipes ul li:nth-of-type(2n) .item-content {
+    float: left
+}
+.body-v2 .category .recipes ul li:nth-last-of-type(1) {
+    border-bottom: none
+}
+@media (min-width: 992px) {
+    .body-v2 .category .recipes ul li:nth-last-of-type(2) {
+        border-bottom: none
+    }
+}
+.body-v2 .category .recipes ul li .item-content {
+    margin: 30px auto;
+    display: block;
+    max-width: 400px
+}
+.body-v2 .category .recipes ul li .item-content * {
+    display: inline-block
+}
+.body-v2 .category .recipes ul li .item-content p {
+    max-width: 350px
+}
+.body-v2 .category .recipes ul li .item-content .thumbnail-link {
+    display: block
+}
+.body-v2 .category .recipes ul li .item-content .thumbnail-image {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .4s ease-in-out
+}
+.body-v2 .category .recipes ul li .item-content .thumbnail-image:hover {
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%)
+}
+.body-v2 .category .recipes ul li .item-content a {
+    color: #333
+}
+.body-v2 .category .recipes ul li .item-content h4 {
+    font-family: "Avenir Demi";
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+.body-v2 .category .recipes ul li .item-content p {
+    margin: 0
+}
+.body-v2 .category .recipes ul li .item-content .learn-more {
+    margin: 18px 18px 0 18px;
+    padding: 6px 17px;
+    color: white;
+    font-size: 16px
+}
+.body-v2 .category .recipes ul #recipe-category-item-105786-share-new-links-you-post-on-facebook-to-twitter .thumbnail-image {
+    width: 120px
+}
+@media (max-width: 991px) {
+    .body-v2 .category .recipes ul li {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #DEDEDE
+    }
+    .body-v2 .category .recipes ul li .item-content {
+        float: none !important
+    }
+    .body-v2 .category .recipes ul li:last-of-type {
+        border-bottom: none !important
+    }
+}
+#v2-jobs-body h2 {
+    text-align: center
+}
+#v2-jobs-body section {
+    padding: 20px 0;
+    font-size: 18px
+}
+@media (max-width: 768px) {
+    #v2-jobs-body section {
+        padding: 20px
+    }
+    #v2-jobs-body section h1 {
+        font-size: 50px
+    }
+    #v2-jobs-body section h2 {
+        font-size: 20px
+    }
+}
+#v2-jobs-body .greeting {
+    text-align: center;
+    margin-top: 10px
+}
+#v2-jobs-body .greeting h1 {
+    line-height: 1.1;
+    max-width: 720px
+}
+@media (max-width: 768px) {
+    #v2-jobs-body .greeting {
+        margin-top: 0
+    }
+}
+#v2-jobs-body .greeting a {
+    font-size: 24px;
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif
+}
+#v2-jobs-body .values {
+    background: #333
+}
+@media (min-width: 768px) {
+    #v2-jobs-body .values .container {
+        padding: 0 100px
+    }
+}
+#v2-jobs-body .values h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center
+}
+#v2-jobs-body .values li {
+    margin-bottom: 60px
+}
+#v2-jobs-body .values h2 {
+    color: white;
+    text-align: left
+}
+#v2-jobs-body .values p {
+    color: #969999;
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif;
+    line-height: 24px;
+    font-size: 20px
+}
+#v2-jobs-body .values-background {
+    overflow: hidden;
+    padding: 0
+}
+#v2-jobs-body .values-background .images {
+    display: -webkit-flex;
+    display: flex
+}
+#v2-jobs-body .values-background .images div {
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-transition: background-image 2s;
+    transition: background-image 2s
+}
+#v2-jobs-body .perks {
+    background-color: #fafafa
+}
+#v2-jobs-body .perks ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around
+}
+#v2-jobs-body .perks ul li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 355px;
+    margin-bottom: 36px
+}
+#v2-jobs-body .perks ul li img {
+    flex-shrink: 0
+}
+#v2-jobs-body .perks ul li span {
+    margin-left: 20px
+}
+#v2-jobs-body .blog ul, #v2-jobs-body .opensource ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+#v2-jobs-body .blog ul li, #v2-jobs-body .opensource ul li {
+    width: 350px;
+    margin: 0 10px 36px 10px
+}
+#v2-jobs-body .blog ul li a, #v2-jobs-body .blog ul li span, #v2-jobs-body .opensource ul li a, #v2-jobs-body .opensource ul li span {
+    display: block
+}
+#v2-jobs-body .blog ul li a, #v2-jobs-body .opensource ul li a {
+    text-transform: capitalize
+}
+#v2-jobs-body .opensource {
+    background-color: #fafafa
+}
+#v2-jobs-body .opensource a {
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif
+}
+#v2-jobs-body .opensource span {
+    font-size: 16px
+}
+#v2-jobs-body .blog a {
+    text-align: center
+}
+#v2-jobs-body .press {
+    background-color: #00adff
+}
+#v2-jobs-body .press h2 {
+    color: white
+}
+#v2-jobs-body .press ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 10px 0 20px 0
+}
+#v2-jobs-body .press ul li {
+    text-align: center;
+    width: 300px;
+    margin: 0 20px
+}
+#v2-jobs-body .press ul li a, #v2-jobs-body .press ul li a:hover {
+    color: #333
+}
+#v2-jobs-body .press ul li img {
+    max-width: 300px;
+    max-height: 30px
+}
+#v2-jobs-body .positions {
+    padding: 20px 0
+}
+#v2-jobs-body .positions .area {
+    margin: 20px 0;
+    font-size: 24px;
+    width: 100%;
+    display: block;
+    text-align: center
+}
+@media (max-width: 992px) {
+    #v2-jobs-body .positions .area {
+        font-size: 18px
+    }
+}
+#v2-jobs-body .positions .area span {
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif;
+    min-width: 300px
+}
+#v2-jobs-body .positions .area .specific-positions li {
+    display: block;
+    color: #00adff
+}
+#v2-jobs-body .extra-jobs {
+    text-align: center
+}
+#v2-jobs-body .extra-jobs p {
+    font-size: 24px;
+    margin: 20px 20%
+}
+@media (max-width: 992px) {
+    #v2-jobs-body .extra-jobs p {
+        font-size: 18px;
+        margin: 20px
+    }
+}
+#v2-jobs-body .extra-jobs a {
+    border-radius: 120px;
+    margin: 20px;
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif
+}
+#v2-jobs-body .job-header {
+    background-image: url(//d3rnbxvnd0hlox.cloudfront.net/assets/v2/jobs/job_cover-914ab2bc3b95edb188582d0b68fb6f64.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px
+}
+#v2-jobs-body .job-header.greeting {
+    background-image: url(//d3rnbxvnd0hlox.cloudfront.net/assets/v2/jobs/cover-a749cf0a23d5486531ab3346faaeaf40.jpg);
+    background-position: 50% 30%
+}
+#v2-jobs-body .job-title-header {
+    padding: 40px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 502px
+}
+#v2-jobs-body .job-title-header div {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative
+}
+#v2-jobs-body .job-title-header a {
+    margin-top: 20px
+}
+#v2-jobs-body .job-title-header h1 {
+    line-height: 1;
+    color: white;
+    margin: 0 auto
+}
+@media (max-width: 768px) {
+    #v2-jobs-body .job-title-header h1 {
+        font-size: 50px
+    }
+}
+#v2-jobs-body .apply {
+    text-align: center;
+    margin-bottom: 40px
+}
+#v2-jobs-body .apply p {
+    margin: 20px
+}
+#v2-jobs-body .apply .apply-link {
+    width: 280px;
+    border-radius: 100px;
+    padding: 14px 0;
+    margin: 30px;
+    margin-top: 10px;
+    font-family: "Avenir Demi", "Avenir", helvetica, arial, sans-serif
+}
+#v2-jobs-body .job {
+    font-size: 18px
+}
+#v2-jobs-body .job .container {
+    width: 950px;
+    padding: 0 20px
+}
+#v2-jobs-body .job .description {
+    background-color: #fafafa;
+    padding: 40px 0
+}
+#v2-jobs-body .job section.list {
+    padding: 40px 0
+}
+#v2-jobs-body .job section.list ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 16px 0 0 0;
+    list-style-type: disc
+}
+#v2-jobs-body .job section.list ul li {
+    margin: 20px;
+    width: 400px
+}
+#v2-jobs-body .job section.list h1 {
+    line-height: 1.1
+}
+#v2-jobs-body .job section.list h1, #v2-jobs-body .job section.list h2 {
+    margin-top: 0
+}
+#v2-jobs-body .job section.list:nth-of-type(2n) {
+    background-color: #fafafa
+}
+#v2-jobs-body .job p {
+    padding: 0 20px;
+    font-size: 24px
+}
