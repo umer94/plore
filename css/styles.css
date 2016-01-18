@@ -702,7 +702,6 @@
 }
 .body-v2 .category .recipes ul li {
     padding: 0 80px;
-    border: 1px solid #DEDEDE;
     border-top: none;
     width: 100%;
     box-sizing: border-box;
@@ -717,7 +716,7 @@
     border-left: none
 }
 .body-v2 .category .recipes ul li:nth-of-type(2n+1) .item-content {
-    float: right
+  /*  float: right*/
 }
 .body-v2 .category .recipes ul li:nth-of-type(2n) {
     border-left: none;
